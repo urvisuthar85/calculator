@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Calculator</title>
+
+    <!-- calculator.css -->
+    <link rel="stylesheet" href="calculator.css" />
+  </head>
+  <body>
+
+    <input type="text" onkeypress="myFunction()">
+    <div class="wrapper">
+      <div class="calculator">
+        <div class="calculator-header">
+                <div class="theme-switch-wrapper">
+                        <label class="theme-switch" for="checkbox">
+                            <input type="checkbox" id="checkbox" />
+                            <div class="slider round"></div>
+                      </label>
+                    </div>
+        </div>
+        <div>
+        <input type="textarea" class="calculator-body" placeholder="0" style="width: 100%;height: 100%;border: none;"  value="" id="result">
+          <div style="text-align: right">
+            
+            <h1 id="output">0</h1>
+            <p id="input"></p>
+          </div>
+        </div>
+        <div class="calculator-footer">
+        
+          <div class="symbol" ><input style="border : none;font-size: 20px; background: #ff7043;color: #fff;" type="button" value="C" onclick="dle()"/></div>
+        <div class="symbol" ><input style="border : none;font-size: 20px; background: #ff7043;color: #fff;" type="button" value="AC" onclick="clr()"/></div>
+        <div class="symbol"><input style="border : none;font-size: 24px; background: #ff7043;color: #fff;" type="button" value="%" onclick="dis('%')"/></div>
+        <div class="symbol"><input style="border : none;font-size: 24px; background: #ff7043;color: #fff;" type="button" value="/" onclick="dis('/')"/></div>
+        <div><input class="btn" type="button" value="7" onclick="dis('7')"/></div>
+        <div><input class="btn" type="button" value="8" onclick="dis('8')"/></div>
+        <div><input class="btn" type="button" value="9" onclick="dis('9')"/></div>
+        <div class="symbol"><input style="border : none;font-size: 24px; background: #ff7043;color: #fff;" type="button" value="*" onclick="dis('*')"/></div>
+        <div><input class="btn" type="button" value="4" onclick="dis('4')"/></div>
+        <div><input class="btn" type="button" value="5" onclick="dis('5')"/></div>
+        <div><input class="btn" type="button" value="6" onclick="dis('6')"/></div>
+        <div class="symbol"><input style="border : none;font-size: 24px; background: #ff7043;color: #fff;" type="button" value="-" onclick="dis('-')"/></div>
+        <div><input class="btn" type="button" value="1" onclick="dis('1')"/></div>
+        <div><input class="btn" type="button" value="2" onclick="dis('2')"/></div>
+        <div><input class="btn" type="button" value="3" onclick="dis('3')"/></div>
+        <div class="symbol"><input style="border : none;font-size: 24px; background: #ff7043;color: #fff;" type="button" value="+" onclick="dis('+')"/></div>
+        <div><input class="btn" type="button" value="0" onclick="dis('0')"/></div>
+        <div><input class="btn" type="button" value="00" onclick="dis('00')"/></div>
+        <div><input class="btn" type="button"  value="." onclick="dis('.')"/></div>
+        <div class="symbol-dark"><input style="border : none;font-size: 24px; background: #f4511e;color: #fff;" type="button" value="=" onclick="solve()"/></div>
+        </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Math.js -->
+    <script>
+      function calcNumbers(result){
+   form.displayResult.value=form.displayResult.value+result;
+   
+}
+</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/6.2.1/math.js"></script>
+
+    <!-- calculator.js -->
+    <script src="calculator.js"></script>
+   
+
+
+</body>
+</html>
